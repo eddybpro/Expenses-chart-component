@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root{
+    --Soft-red: hsl(10, 79%, 65%);
+    --Medium-orange :hsl(10, 100%, 76%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Cream);
+    min-height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+
+.header{
+    min-width: 260px;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Soft-red);
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    color: var(--Very-pale-orange);
+    margin-bottom: .75rem;
+}
+
+.header img{
+    width: 50px;
+    height: 50px;
+}
+
+main{
+    max-width: 350px;
+    width: 100%;
+    min-width: 260px;
+    padding: .5rem 1rem;
+    background-color: var(--Very-pale-orange);
+    border-radius: 8px;
+    margin-bottom: .75rem;
+}
+
+main .title{
+    color: var(--Dark-brown);
+}
+
+main .box-chart{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: flex-end;
+    gap: .25rem;
+    margin: 1rem 0;
+}
+
+main .box-chart .card{
+    position: relative;
+}
+
+main .box-chart .card .value{
+    display: block;
+    position: absolute;
+    top: 0;
+    color: var(--Very-pale-orange);
+    background-color: var(--Dark-brown);
+    margin-bottom: .2rem;
+    padding: .1rem;
+    border-radius: 4px;
+    font-size: .8rem;
+    text-align: center;
+    z-index: 10;
+}
+
+main .box-chart .card .none{
+    display: none;
+}
+
+main .box-chart .card .chart{
+    width: 30px;
+    height: 80px;
+    background-color: var(--Soft-red);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+main .box-chart .card .chart:hover{
+    background-color:var(--Medium-orange) ;
+}
+
+main .box-chart .card .chart-link:active .chart{
+    background-color: var(--Cyan);
+}
+
+.card .day{
+    color: var(--Dark-brown);
+}
+
+main .line{
+    border-top: 1px solid var(--Dark-brown);
+    margin-bottom: 1rem;
+}
+
+main .total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--Dark-brown);
+}
+
+.total div:first-child p{
+    color: var(--Medium-brown);
+    margin-bottom: .25rem;
+}
+
+.total div:first-child strong{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.total div:last-child p:first-child{
+    color: var(--Dark-brown);
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: .25rem;
+}
+
+.total div:last-child p:last-child{
+    color: var(--Medium-brown);
+}
+
+footer{
+    width: 100%;
+    max-width: 350px;
+    min-width: 260px;
+    padding: .5rem;
+    text-align: center;
+    color: var(--Dark-brown);
+    margin: 1rem 0;
+}
+
+footer a{
+    color: var(--Soft-red);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
